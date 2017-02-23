@@ -1,0 +1,66 @@
+{% comment %}
+  Beware: this is a small convenience that appears in most Jekyll sites.
+
+  However, the gem `jekyll-paginate` has been deprecated and
+  **you can't use a paginator with a permalink**.
+
+  But it still works. You need to configure the two variables below
+  (`paginator_page` and `list_page`) to match the variable `paginate_path`
+  you've set in your `_config.yml`.
+
+  ---
+
+  In order to work, use this component like this:
+
+  ```html
+  {% for post in paginator.posts %}
+    <div>
+      <h1>{{ post.title }}</h1>
+      <div>{{ post.content }}</div>
+    </div>
+  {% endfor %}
+
+  {% include components/paginator.html %}
+  ```
+
+  And you're set!
+{% endcomment %}
+
+{% assign paginator_page = "/posts/"         %}
+{% assign list_page      = "/posts/archive/" %}
+
+<div class="paginator">
+  <section class="paginator__previous">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        {% capture url %}{{ paginator_page }}{% endcapture %}
+      {% else %}
+        {% capture url %}{{ paginator_page }}{{ paginator.previous_page }}/{% endcapture %}
+      {% endif %}
+
+      <a class="paginator__link" href="{{ url }}">
+        Previous
+      </a>
+    {% else %}
+      Start
+    {% endif %}
+  </section>
+
+  {% if list_page %}
+    <section class="paginator__list">
+      <a class="paginator__link" href="{{ list_page }}">
+        Archive
+      </a>
+    </section>
+  {% endif %}
+
+  <section class="paginator__next">
+    {% if paginator.next_page %}
+      <a class="paginator__link" href="{{ paginator_page }}{{ paginator.next_page }}/">
+        Next
+      </a>
+    {% else %}
+      End
+    {% endif %}
+  </section>
+</div>

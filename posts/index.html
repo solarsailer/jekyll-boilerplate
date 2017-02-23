@@ -1,0 +1,17 @@
+---
+title: Posts
+---
+
+{% comment %}
+  Unfortunately, when we use the paginator, we can't use a permalink.
+  That's why this page is not in the `_pages` folder like the others.
+{% endcomment %}
+
+{% for post in paginator.posts %}
+  <article>
+    <h3>{{ post.title }} - {{ post.date | date: "%d %b. %Y" | downcase }}</h3>
+    <p>{{ post.content }}</p>
+  </article>
+{% endfor %}
+
+{% include components/paginator.html %}

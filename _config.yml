@@ -1,0 +1,105 @@
+title: "Awesome site"
+description: "Awesome description"
+keywords: "awesome, site, jekyll"
+
+github_username:  ""
+twitter_username: ""
+
+google_tracking_code: ""
+
+url: "http://example.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site
+
+repository: "jekyll/jekyll" # your GitHub repository for Github Pages
+
+# --------------------------------------------------------------
+# Build Configuration.
+# --------------------------------------------------------------
+
+# This is important and allows us to declutter the root folder.
+# Every page (except the page that uses the paginator) will go there
+# with a pretty permalink. Way better.
+include: ['_pages']
+
+# Don't put trash in the `_site` folder.
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - webpack.config.js
+  - yarn.lock
+  - node_modules
+  - src
+
+# Webpack generates the bundles directly into the `_site/` folder during
+# development (more efficient, better with Browser-Sync).
+# In production, we use a separate (**checkouted**) set of bundles which
+# are located in the `static/` folder outside of `_site/`.
+#
+# By using this config below, we keep the files in development,
+# otherwise Jekyll will erase them each time it builds the `_site/`.
+#
+# Don't bother to clean them: they are not committed and will only
+# be present on your dev machine. :)
+keep_files:
+  - static/bundle.css
+  - static/bundle.css.map
+  - static/bundle.js
+  - static/bundle.js.map
+
+# --------------------------------------------------------------
+# Defaults.
+# --------------------------------------------------------------
+
+show_drafts: nil
+
+# Don't forget the trailing slash!
+permalink: /:categories/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# --------------------------------------------------------------
+# Markdown.
+# --------------------------------------------------------------
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  parse_block_html: true
+  parse_span_html: true
+
+# --------------------------------------------------------------
+# Syntax Highlighter.
+# --------------------------------------------------------------
+
+highlighter: rouge
+
+# --------------------------------------------------------------
+# Pagination.
+# --------------------------------------------------------------
+
+paginate_path: '/posts/:num/'
+paginate: 1
+
+# --------------------------------------------------------------
+# Plugins.
+# --------------------------------------------------------------
+
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
