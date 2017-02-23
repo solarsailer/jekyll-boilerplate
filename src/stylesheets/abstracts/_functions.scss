@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------- *\
+ * Functions.
+\* ---------------------------------------------------------- */
+
+// Slightly lighten a color.
+// From https://sass-guidelin.es/#lightening-and-darkening-colors
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color.
+// From https://sass-guidelin.es/#lightening-and-darkening-colors
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
