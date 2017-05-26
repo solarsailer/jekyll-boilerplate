@@ -39,7 +39,7 @@ yarn run build
 
 And copy the files of the `_site` folder on your server, by any means.
 
-It is also conceived with **GitHub Pages** in mind (we don't use the `github-pages` gem, but our Gemfile uses the required version for all the gems). _If you use this boilerplate for your organization/profile page, it should normally be built by GitHub automatically without errors._
+It is also conceived with **GitHub Pages** in mind (we don't use the `github-pages` gem, but our Gemfile [uses the required version for all the gems](https://pages.github.com/versions/)). _If you use this boilerplate for your organization/profile page, it should normally be built by GitHub automatically without errors._
 
 So, don't forget to run `yarn run build` (and commit the files) before pushing your changes to your repo.
 
