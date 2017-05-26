@@ -1109,7 +1109,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6, concat-stream@^1.5.0, concat-stream@^1.5.2:
+concat-stream@^1.5.0, concat-stream@^1.5.2:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.0.tgz#0aac662fd52be78964d5532f694784e70110acf7"
   dependencies:
@@ -1382,7 +1382,7 @@ defined@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
 
-deglob@^2.0.0, deglob@^2.1.0:
+deglob@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/deglob/-/deglob-2.1.0.tgz#4d44abe16ef32c779b4972bd141a80325029a14a"
   dependencies:
@@ -1660,17 +1660,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-standard-jsx@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-3.2.0.tgz#c240e26ed919a11a42aa4de8059472b38268d620"
-
 eslint-config-standard-jsx@3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-3.3.0.tgz#cab0801a15a360bf63facb97ab22fbdd88d8a5e0"
-
-eslint-config-standard@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-6.2.1.tgz#d3a68aafc7191639e7ee441e7348739026354292"
 
 eslint-config-standard@7.1.0:
   version "7.1.0"
@@ -1679,13 +1671,6 @@ eslint-config-standard@7.1.0:
 eslint-plugin-promise@~3.4.0:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.4.2.tgz#1be2793eafe2d18b5b123b8136c269f804fe7122"
-
-eslint-plugin-react@~6.7.1:
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.7.1.tgz#1af96aea545856825157d97c1b50d5a8fb64a5a7"
-  dependencies:
-    doctrine "^1.2.2"
-    jsx-ast-utils "^1.3.3"
 
 eslint-plugin-react@~6.9.0:
   version "6.9.0"
@@ -1698,45 +1683,6 @@ eslint-plugin-react@~6.9.0:
 eslint-plugin-standard@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-2.0.1.tgz#3589699ff9c917f2c25f76a916687f641c369ff3"
-
-eslint@~3.10.2:
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.10.2.tgz#c9a10e8bf6e9d65651204778c503341f1eac3ce7"
-  dependencies:
-    babel-code-frame "^6.16.0"
-    chalk "^1.1.3"
-    concat-stream "^1.4.6"
-    debug "^2.1.1"
-    doctrine "^1.2.2"
-    escope "^3.6.0"
-    espree "^3.3.1"
-    estraverse "^4.2.0"
-    esutils "^2.0.2"
-    file-entry-cache "^2.0.0"
-    glob "^7.0.3"
-    globals "^9.2.0"
-    ignore "^3.2.0"
-    imurmurhash "^0.1.4"
-    inquirer "^0.12.0"
-    is-my-json-valid "^2.10.0"
-    is-resolvable "^1.0.0"
-    js-yaml "^3.5.1"
-    json-stable-stringify "^1.0.0"
-    levn "^0.3.0"
-    lodash "^4.0.0"
-    mkdirp "^0.5.0"
-    natural-compare "^1.4.0"
-    optionator "^0.8.2"
-    path-is-inside "^1.0.1"
-    pluralize "^1.2.1"
-    progress "^1.1.8"
-    require-uncached "^1.0.2"
-    shelljs "^0.7.5"
-    strip-bom "^3.0.0"
-    strip-json-comments "~1.0.1"
-    table "^3.7.8"
-    text-table "~0.2.0"
-    user-home "^2.0.0"
 
 eslint@~3.18.0:
   version "3.18.0"
@@ -1778,7 +1724,7 @@ eslint@~3.18.0:
     text-table "~0.2.0"
     user-home "^2.0.0"
 
-espree@^3.3.1, espree@^3.4.0:
+espree@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/espree/-/espree-3.4.0.tgz#41656fa5628e042878025ef467e78f125cb86e1d"
   dependencies:
@@ -2124,7 +2070,7 @@ glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@~7.1.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^9.0.0, globals@^9.14.0, globals@^9.2.0:
+globals@^9.0.0, globals@^9.14.0:
   version "9.17.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.17.0.tgz#0c0ca696d9b9bb694d2e5470bd37777caad50286"
 
@@ -2639,7 +2585,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsx-ast-utils@^1.3.3, jsx-ast-utils@^1.3.4:
+jsx-ast-utils@^1.3.4:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.4.0.tgz#5afe38868f56bc8cc7aeaef0100ba8c75bd12591"
   dependencies:
@@ -3329,7 +3275,7 @@ pkg-conf@^2.0.0:
     find-up "^2.0.0"
     load-json-file "^2.0.0"
 
-pkg-config@^1.0.1, pkg-config@^1.1.0:
+pkg-config@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/pkg-config/-/pkg-config-1.1.1.tgz#557ef22d73da3c8837107766c52eadabde298fe4"
   dependencies:
@@ -4247,17 +4193,6 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
-standard-engine@~5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/standard-engine/-/standard-engine-5.2.0.tgz#400660ae5acce8afd4db60ff2214a9190ad790a3"
-  dependencies:
-    deglob "^2.0.0"
-    find-root "^1.0.0"
-    get-stdin "^5.0.1"
-    home-or-tmp "^2.0.0"
-    minimist "^1.1.0"
-    pkg-config "^1.0.1"
-
 standard-engine@~5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/standard-engine/-/standard-engine-5.4.0.tgz#e0e86959ea0786425d3383e40c1bf70d2f985579"
@@ -4274,19 +4209,7 @@ standard-json@^1.0.0:
   dependencies:
     concat-stream "^1.5.0"
 
-standard@*:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/standard/-/standard-8.6.0.tgz#635132be7bfb567c2921005f30f9e350e4752aad"
-  dependencies:
-    eslint "~3.10.2"
-    eslint-config-standard "6.2.1"
-    eslint-config-standard-jsx "3.2.0"
-    eslint-plugin-promise "~3.4.0"
-    eslint-plugin-react "~6.7.1"
-    eslint-plugin-standard "~2.0.1"
-    standard-engine "~5.2.0"
-
-standard@^9.0.2:
+standard@*, standard@^9.0.2:
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/standard/-/standard-9.0.2.tgz#9bd3b9467492e212b1914d78553943ff9b48fd99"
   dependencies:
@@ -4380,10 +4303,6 @@ strip-indent@^1.0.1:
   resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-1.0.1.tgz#0c7962a6adefa7bbd4ac366460a638552ae1a0a2"
   dependencies:
     get-stdin "^4.0.1"
-
-strip-json-comments@~1.0.1:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
