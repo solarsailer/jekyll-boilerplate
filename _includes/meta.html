@@ -8,6 +8,7 @@
 {% endif %}
 
 <link rel="shortcut icon" href="/static/favicon.ico?v=001">
+<link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ '/feed.json' | absolute_url }}">
 {% feed_meta %}
 
 <meta name="author" content="{{ site.title | escape }}">
